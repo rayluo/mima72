@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>帮助(Help)</title>
+<meta name="Author" content="Iceberg" />
+<meta name="Keywords" content="密码72变" />
+<style>
+fieldset {margin: 1em; border: 0; color: #888;}
+legend {font-weight:bold; font-size: 1.5em; color: black;}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="waterfall.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {$('#container').waterfall({columns: 3});});
+</script>
+</head>
+<body>
+
+<div id="container">
+
+<fieldset><legend>“密码72变”解决什么问题？</legend>
+你在很多网站、论坛都注册了帐号，但无法为每个网站记住一个不同的密码，于是你对全部网站都使用基本相同的密码。
+然而，出于意外或人为的原因，有可能你的其中一个网站的密码被泄露，就会导致你的所有其它网站的帐号都会沦陷。
+这样的事情并非危言耸听，见
+<a target="_blank" href="http://tech.163.com/11/1223/02/7LU40O26000915BF.html">
+《2011年12月21日，国内最大的程序员社区CSDN上600万用户资料被公开》</a>
+</fieldset>
+
+<fieldset><legend>“密码72变”怎样解决问题？</legend>
+“密码72变”基于你的统一密码，加上你要使用的网站的网址，使用单向加密算法（MD5）得到无规律的字串作为你在各个网站上的登录密码。
+这样确保你在每个网站上的密码都不相同，即使一个网站密码失守，你在其它网站的密码都完全不受影响。
+而你自己自始至终只需记忆唯一一个统一密码。
+（是的，你仍然需要构思一个足够长、不规则、只有你自己能够记住的强密码，作为你的统一密码。）
+</fieldset>
+
+<fieldset><legend>“密码72变”本身可靠吗？</legend>
+<li>“密码72变”绝不偷偷传送和收集用户的密码。</li>
+<li>事实上，“密码72变”本身是一个不连网的单机软件。例如，你可以尝试在打开“密码72变”页面后断开网络，“密码72变”仍然可以工作。
+所以说，密码都是在你的电脑上计算出来，绝不发送回“密码72变”的主网站。
+</li>
+<li>另外，“密码72变”本身是完全开源的。有能力的用户可以检查“密码72变”页面的源代码，确认无隐藏任何不良行为。
+</li>
+</fieldset>
+
+<fieldset><legend>还有问题？</legend>
+向我微博提问吧。 @luoruijun
+</fieldset>
+
+</div>
+
+</body>
+</html>
