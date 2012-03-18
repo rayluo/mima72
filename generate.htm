@@ -19,7 +19,8 @@ body {color: blue}
         document.write("<a href='index.html' target='_blank' title='密码72变的主页'>");
     }
     </script>
-    <img src='hoop.jpg'><strong style='font-size: 2em'>密码72变</strong></img>
+    <img border=0 src='hoop.jpg'><!-- border=0 is needed for IE to hide border in anchor tag -->
+        <strong style='font-size: 2em'>密码72变</strong></img>
     <script type="text/javascript">
     if(location.href.indexOf("disable_home")==-1) {document.write("</a>");}
     </script>
