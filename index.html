@@ -20,6 +20,7 @@ fieldset.waterfall {margin: 1em; border: 0; color: #888;}
 fieldset.waterfall legend {font-weight:bold; font-size: 1.5em; color: black;}
 .footer {text-align:right}
 </style>
+<script type="text/javascript">var current_host = new RegExp('http://([^/]+)').exec(location.href)[1];</script>
 </head>
 <body>
 
@@ -79,6 +80,13 @@ fieldset.waterfall legend {font-weight:bold; font-size: 1.5em; color: black;}
 </li>
 <li>另外，“密码72变”本身是完全开源的。有能力的用户可以检查“密码72变”页面的源代码，确认无隐藏任何不良行为。
 </li>
+<li>但请认明本站域名 <span id='this_host'></span><script type="text/javascript">
+/*Can't just use document.write() here due to its timing issue. Details at http://javascript.crockford.com/script.html */
+$(document).ready(function() {
+	document.getElementById('this_host').innerHTML = 'http://'+current_host;
+})</script>
+谨防假冒
+</li>
 </fieldset>
 
 <fieldset class="waterfall"><legend>还有问题？</legend>
@@ -91,7 +99,6 @@ fieldset.waterfall legend {font-weight:bold; font-size: 1.5em; color: black;}
     </div>
 
 <div>
-	<script>var current_host = new RegExp('http://([^/]+)').exec(location.href)[1];</script>
 	<p style="padding: 2em">点此打开<a style="border: 1px solid #F9B967; background: #FFFBC1; padding:0.5em;" href=
 		"javascript:(function(){_my_script=document.createElement('SCRIPT');_my_script.type='text/javascript';_my_script.src='http%3A//ontopinfo.com/utility/bookmarklet/bridge.js%3Fbackend%3Dhttp%253A%252F%252F'+current_host+'%252Fgenerate.htm%26height%3D240%26width%3D520'+'?_='+(Math.random());document.getElementsByTagName('head')[0].appendChild(_my_script);})();"
 		>密码72变！</a>的操作界面</p>
