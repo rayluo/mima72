@@ -27,11 +27,12 @@ fieldset.waterfall legend {font-weight:bold; font-size: 1.5em; color: black;}
 <h1><img src='hoop.jpg'><strong>密码72变</strong></img></h1>
 
 <ul class="tabs">
-	<li><a href="#home">首页</a></li>
-	<li><a href="#install">安装</a></li>
-	<li><a href="#action">使用</a></li>
-	<li><a href="#desc">说明</a></li>
-	<li><a href="#board">留言</a></li>
+	<li><a class="s" href="#home">首页</a></li>
+	<li><a class="s" href="#install">安装</a></li>
+	<li><a class="s" href="#action">使用</a></li>
+	<li><a class="s" href="#theory">原理</a></li>
+	<li><a class="s" href="#desc">说明</a></li>
+	<li><a class="s" href="#board">留言</a></li>
 </ul>
 
 <div class="panes">
@@ -56,14 +57,17 @@ fieldset.waterfall legend {font-weight:bold; font-size: 1.5em; color: black;}
     </table></div><!-- end of a panel -->
 
 <div>
-	<p>小提示：把以下的“魔法书签按钮”加入到浏览器的书签里，以后就可以在任意网站的入口页面一点此书签，
-	然后无须离开你正在访问的网站页面，就可直接使用“密码72变”功能！</p>
+	<p>无需下载！把以下的书签按钮加入到浏览器的书签里，即可完成安装！</p>
 	<script type="text/javascript" src="http://ontopinfo.com/utility/bookmarklet/stub.htmlp?src=http%253A%2F%2Fontopinfo.com%2Futility%2Fbookmarklet%2Fbridge.js%253Fbackend%253Dhttp%25253A%25252F%25252Fmima72bian.com%25252Fgenerate.htm%2526height%253D240%2526width%253D520&title=%E5%AF%86%E7%A0%8172%E5%8F%98"></script>
 	</div><!-- end of a panel -->
 
 
 <div>
-	<p></p>以下用登录豆瓣网站的过程来演示使用密码72变的方法</p>
+	<p>是否每次访问目标网站之前，总要先访问“密码72变”的主页？当然不需要！</p>
+	<p>安装了书签按钮之后，以后你在访问任何网页（例如douban.com）时，点击“密码72变”书签，
+	当前浏览器不会离开douban.com主页，而直接在右上角弹出密码72变的窗口，“密码72变”就象是douban.com主页上的一个原有功能。
+	</p>
+	<p>以下用登录豆瓣网站的过程视频来演示使用密码72变的方法</p>
 	<center><OBJECT CLASSID="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" WIDTH="850" HEIGHT="368" CODEBASE="http://active.macromedia.com/flash5/cabs/swflash.cab#version=7,0,0,0">
 	<PARAM NAME=movie VALUE="usage/usage.swf">
 	<PARAM NAME=play VALUE=true>
@@ -76,12 +80,31 @@ fieldset.waterfall legend {font-weight:bold; font-size: 1.5em; color: black;}
     </div><!-- end of a panel -->
 
 
+<div>
+	<fieldset class="waterfall"><legend>“密码72变”怎样解决问题？</legend>
+	<img src="topology.png"></img>
+	<li>“密码72变”相当于单机软件。
+		在打开了“密码72变”的操作界面之后，你可以尝试断开网络，“密码72变”仍然可以任意计算密码。
+		可见，密码都是在你的电脑上实时计算出来，绝不发送回“密码72变”的主网站。
+		</li>
+	<li>“密码72变”的源代码是公开的。有能力的用户可以检查“密码72变”页面的源代码，确认无隐藏任何不良行为。
+	</li>
+	<li>但请认明本站域名 <span id='this_host'></span><script type="text/javascript">
+	/*Can't just use document.write() here due to its timing issue. Details at http://javascript.crockford.com/script.html */
+	$(document).ready(function() {
+		document.getElementById('this_host').innerHTML = 'http://'+current_host;
+	})</script>
+	谨防假冒
+	</li>
+	</fieldset>
+
+	</div><!-- end of a panel -->
+
 <div><div id="detail">
 
 <fieldset class="waterfall"><legend>“密码72变”解决什么问题？</legend>
 你在很多网站、论坛都注册了帐号，但无法为每个网站记住一个不同的密码，于是你对全部网站都使用基本相同的密码。
 然而，出于意外或人为的原因，有可能你的其中一个网站的密码被泄露，就会导致你的所有其它网站的帐号都会沦陷。
-
 <p>这样的事情并非危言耸听，见网易科技新闻
 <a target="_blank" href="http://tech.163.com/11/1223/02/7LU40O26000915BF.html">
 《CSDN密码危机扩大 各大网站建议用户更改密码》
@@ -100,41 +123,34 @@ rockyou.com是一个社交网络类型的网站，拥有3200万的注册用户�
 （是的，你仍然需要构思一个足够长、不规则、只有你自己能够记住的强密码，作为你的统一密码。）
 </fieldset>
 
-<fieldset class="waterfall"><legend>“密码72变”本身安全吗？</legend>
-<li>“密码72变”绝不偷偷传送和收集用户的密码。</li>
-<li>事实上，“密码72变”本身是一个不连网的单机软件。例如，你可以尝试在打开“密码72变”页面后断开网络，“密码72变”仍然可以工作。
-所以说，密码都是在你的电脑上计算出来，绝不发送回“密码72变”的主网站。
-</li>
-<li>另外，“密码72变”本身是完全开源的。有能力的用户可以检查“密码72变”页面的源代码，确认无隐藏任何不良行为。
-</li>
-<li>但请认明本站域名 <span id='this_host'></span><script type="text/javascript">
-/*Can't just use document.write() here due to its timing issue. Details at http://javascript.crockford.com/script.html */
-$(document).ready(function() {
-	document.getElementById('this_host').innerHTML = 'http://'+current_host;
-})</script>
-谨防假冒
-</li>
+
+<fieldset class="waterfall"><legend>我重装电脑会丢失密码吗？</legend>
+不会。你只需记住你的统一密码，然后其它的所有密码都是由“密码72变”根据统一密码实时计算得到，
+计算后也不保存。
+说白了，“密码72变”只是提供一种本地的密码运算服务，它绝不保存用户的任何密码。
+既然不保存，也就不存在丢失的问题。
+（顺便说一下，密码72变即使在公用网吧使用，也是安全的，就是因为它完全不保存密码的缘故。）
 </fieldset>
+
+
+<fieldset class="waterfall"><legend>如果我连统一密码也忘记了呢？</legend>
+抱歉，如果没有统一密码，世界上没有人能够帮你找出你在各网站的登录密码。
+连我们“密码72变”也不能。给我们多少钱也不能。我说过了，我们不保存你的密码。
+当然在这种情况下，你可以在各个网站使用它们的“重设密码”功能修改密码。
+</fieldset>
+
+
+<fieldset class="waterfall"><legend>“密码72变”的服务稳定吗？</legend>
+<li>作者本人就在每天用这个服务。</li>
+<li>如果服务器需要例行维护，将会事先提供临时镜像，并在此微博发布通知。
+	<a href="http://weibo.com/n/luoruijun">@luoruijun</a>
+	</li>
+<li>退一步说，就算此网站永远都连接不上了，用户们大不了就到你们的各网站处执行“重置密码”过程嘛。</li>
+</fieldset>
+
 
 <fieldset class="waterfall"><legend>还有问题？</legend>
 向我微博提问吧。 <a href="http://weibo.com/n/luoruijun">@luoruijun</a>
-</fieldset>
-
-<fieldset class="waterfall"><legend>“密码72变”使用方便吗？</legend>
-那当然！很多新用户误以为每次访问自己的网站之前，总要先访问“密码72变”的主页。其实不必！
-在下一页，有提供一个“魔法书签按钮”。只需把那个按钮加入书签。
-以后，就在你要访问的网站（例如weibo.com）的主页上，点击“密码72变”的书签，
-结果是不会离开weibo.com主页，就能在右上角出现密码72变的弹出窗口。
-密码72变就象是weibo.com主页上的一个原有功能。
-</fieldset>
-
-<fieldset class="waterfall"><legend>“密码72变”的服务稳定吗？</legend>
-<p>用户ray提问：如果哪天你这个服务器挂了，我就什么网站都登陆不了了？答复如下。</p>
-<li>作者我就在用这个服务，因为我对此服务的稳定性有信心。</li>
-<li>如果此服务器有故障，我会提供临时镜像备份，让这个服务屹立不倒。</li>
-<li>用户可以关注我的微博 <a href="http://weibo.com/n/luoruijun">@luoruijun</a> ，
-	这样万一将来服务器要迁移地址，大家可以收到我的主动通知。</li>
-<li>退一步说，就算此网站永远都连接不上了，用户们大不了就到你们的各网站处执行“重置密码”过程嘛。</li>
 </fieldset>
 
     </div><!-- end of detail -->
