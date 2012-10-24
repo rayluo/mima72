@@ -38,7 +38,7 @@ body {color: blue}
         特殊情况?</span>
     </td>
     <script>
-      var matched = new RegExp('http://(?:www.)?([^/]+)').exec(document.referrer);
+      var matched = new RegExp('https?://(?:www.)?([^/]+)').exec(document.referrer);
       if (matched) {
         document.getElementById('website').value = matched[1];
       }
