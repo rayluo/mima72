@@ -1,0 +1,4 @@
+Auto-length based on different website's requirement?
+
+21cn.com 12bytes
+hk.jobsdb.com 6~15 characters
